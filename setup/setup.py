@@ -26,7 +26,7 @@ def identify_python_executable():
     print(f'The python executable file is: {executable}')
     if (executable.endswith('python')) | (executable.endswith('python.exe')):
         executable = 'python'
-    elif (executable.endswith('python3')) | (executable.endswith('python3.exe')):
+    elif (executable.endswith('python3')) | (executable.endswith('python3.exe')) | (executable.endswith('python3.8')):
         exectuable = 'python3'
     else:
         raise ValueError(f"executable is {executable} and it doesn't end with neither 'python', 'python.exe', 'python3', nor 'python3.exe'. "
